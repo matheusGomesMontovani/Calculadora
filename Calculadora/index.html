@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+</head>
+<body>
+    <div class="fundo"> 
+        <div class="calculadora">
+            <p id="resultado">0</p>
+            <hr class="linha-separadora">
+            <table>
+                <tr>
+                    <td colspan="3"><button class="botao" id="botao-limpar" style="width: 285px;">C</button></td>
+                    <td><button class="botao botao-operador" data-operator="/">÷</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao botao-numero">7</button></td>
+                    <td><button class="botao botao-numero">8</button></td>
+                    <td><button class="botao botao-numero">9</button></td>
+                    <td><button class="botao botao-operador" data-operator="*">x</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao botao-numero">4</button></td>
+                    <td><button class="botao botao-numero">5</button></td>
+                    <td><button class="botao botao-numero">6</button></td>
+                    <td><button class="botao botao-operador">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button class="botao botao-numero">1</button></td>
+                    <td><button class="botao botao-numero">2</button></td>
+                    <td><button class="botao botao-numero">3</button></td>
+                    <td><button class="botao botao-operador">+</button></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="3"><button class="botao botao-numero" style="width: 285px;" onclick="insert('0')">0</button></td>
+                    <td><button class="botao" id="botao-resultado" onclick="calcular()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
